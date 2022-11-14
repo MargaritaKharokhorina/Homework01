@@ -8,9 +8,12 @@ int count = 1;
 Console.Write($"{n} -> ");
 while (count <= n)
 {
-    if (count % 2 == 0)
-    {
+    if (count == 2) {
         Console.Write($"{count}");
+    } else if (count % 2 == 0)
+    {
+        Console.Write($", {count}");
     }
     count++;
 }
+Console.Write($"\n");
