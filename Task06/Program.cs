@@ -10,5 +10,5 @@ if (a % 2 == 0)
 }
 else
 {
-    Console.WriteLine("Нечётное");
+    Console.WriteLine("Не является чётным");
 }
