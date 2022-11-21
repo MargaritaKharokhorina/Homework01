@@ -10,7 +10,6 @@ bool PalindromeNumber()
 {
     int num1 = number % 10;
     int num2 = number % 100 / 10;
-    int num3 = number % 1000 / 100;
     int num4 = number % 10000 / 1000;
     int num5 = number / 10000;
 
