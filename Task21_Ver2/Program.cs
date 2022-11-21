@@ -2,7 +2,7 @@
 // и находит расстояние между ними в 3D пространстве.
 
 Console.WriteLine("Введите координаты точки А через запятую - xa,ya,za, затем координаты точки B - xb,yb,zb");
-string[] tokens = Console.ReadLine().Split(',');
+string[] tokens = Console.ReadLine()!.Split(',');
 int xa = int.Parse(tokens[0]);
 int ya = int.Parse(tokens[1]);
 int za = int.Parse(tokens[2]);
