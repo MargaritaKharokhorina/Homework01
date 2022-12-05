@@ -7,7 +7,7 @@ int row = int.Parse(tokens[0]);
 int column = int.Parse(tokens[1]);
 string text = tokens[0].Trim();
 
-if (row < 0 && column < 0) Console.WriteLine("Отрицательного индекса быть не может, перезадайте значения");
+if (row < 0 || column < 0) Console.WriteLine("Отрицательного индекса быть не может, перезадайте значения");
 
 int[,] CreateMatrixRndInt (int rows, int columns, int min, int max)
  {
