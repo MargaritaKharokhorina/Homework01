@@ -17,7 +17,6 @@ return numbs;
 
 int numbs = Numbers(array);
 Console.WriteLine($"Количество чисел больше ноля --> {numbs}");
-Console.WriteLine($"{numbs <= 0} Нет чисел больше ноля");
 
 
 
