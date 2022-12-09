@@ -32,28 +32,28 @@ int[,] CreateMatrixRndInt (int rows, int columns, int min, int max)
 
 int SumElementsOfRows(int[,] matrix)
 {
-int sum = 0;
-int minSum = 0;
-int minNum = 0;
-for (int i = 0; i < matrix.GetLength(0); i++)
-{
-for (int j = 0; j < matrix.GetLength(1); j++)
-{
-if (i == 0)
-{
-sum += matrix[i, j];
-minSum += matrix[i, j];
-}
-else sum += matrix[i, j];
-}
-if (sum < minSum)
-{
-minSum = sum;
-minNum = i;
-}
-sum = 0;
-}
-return minNum;
+    int sum = 0;
+    int minSum = 0;
+    int minNum = 0;
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            if (i == 0)
+            {
+                sum += matrix[i, j];
+                minSum += matrix[i, j];
+            }
+            else sum += matrix[i, j];
+        }
+        if (sum < minSum)
+        {
+            minSum = sum;
+            minNum = i;
+        }
+        sum = 0;
+    }
+    return minNum;
 }
 
 int[,] array2D = CreateMatrixRndInt(3, 4, 1, 9);
